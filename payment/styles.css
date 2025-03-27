@@ -1,0 +1,105 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f7f7f7, #e6e6e6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.message {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.details {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 2rem;
+}
+
+.details p {
+    margin-bottom: 0.5rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-back, .btn-continue {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.btn-back {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-continue {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-back:hover {
+    background-color: #e53935;
+}
+
+.btn-continue:hover {
+    background-color: #388e3c;
+}
+
+/* Keyframe animation for card sliding */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

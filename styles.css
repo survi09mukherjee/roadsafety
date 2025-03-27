@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark mode background */
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:#e28a17;
+}
+
+.mode-toggle {
+    cursor: pointer;
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin: 20px 0; /* Add some vertical spacing */
+}
+
+button {
+    margin: 0 10px; /* Add horizontal spacing between buttons */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: green;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between elements */
+}
+
+.logo {
+    width: 200px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+.footer-content p {
+    font-size: 1.5em; /* Increase font size for the text */
+    color: white; /* Optional: change color for readability */
+}
+
+.contact-link {
+    font-size: 1.5em; /* Increase font size for the link */
+    color: rgb(4, 0, 128);
+    text-decoration: underline;
+}
+.contact-link:active {
+    color: red; /* Change color when clicked */
+}
